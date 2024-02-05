@@ -43,8 +43,9 @@ export class ProjectItem
 
   renderContent() {
     this.element.querySelector('h2')!.textContent = this.project.title;
-    this.element.querySelector('h3')!.textContent = this.persons + ' assigned';
-    this.element.querySelector('p')!.textContent = this.project.description;
-    this.element.querySelector('h3')!.textContent = this.project.comment;
+    this.element.querySelector('.comment')!.textContent = this.project.comment;
+    this.element.querySelector('.people')!.textContent = this.project.people + ' assigned';
+    this.element.querySelector('h3')!.textContent = this.project.description;
+    
   }
 }
